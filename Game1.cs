@@ -48,6 +48,7 @@ namespace Vectorier
 
         protected override void Draw(GameTime gameTime)
         {
+            GraphicsDevice.Clear(Color.LightSkyBlue);
             base.Draw(gameTime);
         }
     }

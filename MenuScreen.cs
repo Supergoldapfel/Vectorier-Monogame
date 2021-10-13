@@ -10,7 +10,7 @@ namespace Vectorier
 
         public override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.AntiqueWhite);
+
         }
 
         public override void Update(GameTime gameTime)
