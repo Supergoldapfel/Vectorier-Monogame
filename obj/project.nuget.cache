@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ivrFqBe1sZkuYz73W6Zyjlhi+teMa0pX6Y5MrCTlx6hIU+g4buNQr6hFbV3cWqx7kLFjjoZEfPOxoog9/yRcug==",
+  "success": true,
+  "projectFilePath": "T:\\VisualStudio\\Projects\\Vectorier\\Vectorier.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\warna\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\warna\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\warna\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\warna\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
