@@ -23,3 +23,29 @@ T:\VisualStudio\Projects\Vectorier\obj\Debug\netcoreapp3.1\Vectorier.pdb
 T:\VisualStudio\Projects\Vectorier\obj\Debug\netcoreapp3.1\Vectorier.genruntimeconfig.cache
 T:\VisualStudio\Projects\Vectorier\bin\Debug\netcoreapp3.1\MonoGame.Extended.dll
 T:\VisualStudio\Projects\Vectorier\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Content\Images\menu_background.xnb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Vectorier.exe
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Vectorier.deps.json
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Vectorier.runtimeconfig.json
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Vectorier.runtimeconfig.dev.json
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Vectorier.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Vectorier.pdb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\MonoGame.Extended.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.csprojAssemblyReference.cache
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.AssemblyInfoInputs.cache
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.AssemblyInfo.cs
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.csproj.CoreCompileInputs.cache
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.csproj.CopyComplete
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.dll
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.pdb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.genruntimeconfig.cache

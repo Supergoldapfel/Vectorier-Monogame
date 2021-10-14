@@ -9,7 +9,6 @@ namespace Vectorier
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
         private readonly ScreenManager _screenManager;
 
         public Game1()
@@ -25,20 +24,13 @@ namespace Vectorier
 
         private void LoadMenuScreen()
         {
-            _screenManager.LoadScreen(new MenuScreen(this), new FadeTransition(GraphicsDevice, Color.Black));
+            _screenManager.LoadScreen(new MenuScreen(this, _graphics), new FadeTransition(GraphicsDevice, Color.Black));
         }
 
         protected override void Initialize()
         {
             base.Initialize();
             LoadMenuScreen();
-        }
-
-        protected override void LoadContent()
-        {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
         }
 
         protected override void Update(GameTime gameTime)
@@ -48,7 +40,6 @@ namespace Vectorier
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.LightSkyBlue);
             base.Draw(gameTime);
         }
     }
