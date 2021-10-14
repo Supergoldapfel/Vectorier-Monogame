@@ -31,14 +31,20 @@ namespace Vectorier
 
             float screenWidth = _graphics.PreferredBackBufferWidth;
             float screenHeight = _graphics.PreferredBackBufferHeight;
+            //Debug.WriteLine(screenWidth + " + " + screenHeight);
             float backgroundHeightScaling = screenWidth / backgroundTexture.Width;
             float backgroundWidthScaling = screenHeight / backgroundTexture.Height;
             float backgroundAspect = backgroundTexture.Width / backgroundTexture.Height;
+            Vector2 backgroundScale;
             // If width scaling is bigger than height scaling, scale by height
-            if(backgroundWidthScaling >= backgroundHeightScaling)
+            if (backgroundWidthScaling >= backgroundHeightScaling)
 			{
-                Vector2 backgroundScale = new Vector2(backgroundWidthScaling, )
-			}
+                backgroundScale = new Vector2(backgroundWidthScaling, backgroundWidthScaling / backgroundAspect);
+			} 
+            else
+            {
+                backgroundScale = new Vector2(backgroundHeightScaling * backgroundAspect, backgroundHeightScaling);
+            }
             // Background Image
             _spriteBatch.Draw(
                 backgroundTexture,
@@ -47,7 +53,7 @@ namespace Vectorier
                 Color.White, // Color
                 0f, // Rotation
                 new Vector2(0, 0), // Origin
-                new Vector2((float)_graphics.PreferredBackBufferWidth/backgroundTexture.Width, (float)_graphics.PreferredBackBufferHeight/backgroundTexture.Height), // Scale
+                backgroundScale, // Scale
                 SpriteEffects.None, // Effects
                 0f // Layer
             );

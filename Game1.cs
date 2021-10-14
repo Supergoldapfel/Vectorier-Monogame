@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System.Diagnostics;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended.Screens;
@@ -16,6 +17,8 @@ namespace Vectorier
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            Window.AllowUserResizing = true;
+            Window.ClientSizeChanged += onClientResize;
 
             // Register the ScreenManager
             _screenManager = new ScreenManager();
@@ -41,6 +44,13 @@ namespace Vectorier
         protected override void Draw(GameTime gameTime)
         {
             base.Draw(gameTime);
+        }
+
+        private void onClientResize(object sender, System.EventArgs e)
+        {
+            _graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
+            _graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
+            _graphics.ApplyChanges();
         }
     }
 }
