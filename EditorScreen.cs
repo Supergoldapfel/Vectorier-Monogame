@@ -41,7 +41,7 @@ namespace Vectorier
 			game.GraphicsDevice.Clear(Color.White);
 
 			RectangleF camBounds = cam.BoundingRectangle;
-			Vector2 closestGridPoint = new Vector2(camBounds.Top - (camBounds.Top % cellSize), camBounds.Left - (camBounds.Left % cellSize));
+			Vector2 closestGridPoint = new Vector2(camBounds.Left - (camBounds.Left % cellSize), camBounds.Top - (camBounds.Top % cellSize));
 			
 			var transformMatrix = cam.GetViewMatrix();
 			spriteBatch.Begin(transformMatrix: transformMatrix);

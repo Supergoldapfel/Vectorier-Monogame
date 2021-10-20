@@ -1,6 +1,3 @@
 ﻿Colors:
 - Button Higlight: (L)#0085eed5 (D)#003baaf7
 - Button Click: (L)#0068baff (D)#00266dff
-
-TODO:
-- Button -> When pressed without hovering and then released while hovering, onClick is called (not intuitive)

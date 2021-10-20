@@ -42,19 +42,19 @@ namespace Vectorier
 		{
 			bool isHovering = this.isHovering();
 			ButtonState leftButtonState = Mouse.GetState().LeftButton;
-			if(isHovering && !wasHovering) {
+			if(isHovering && (leftButtonState == ButtonState.Released) && !wasHovering) {
 				texture = hoverTexture;
 				wasHovering = true;
-			} else if(isHovering && wasHovering && (leftButtonState == ButtonState.Pressed)) {
+			} else if(isHovering && wasHovering && (leftButtonState == ButtonState.Pressed) && !wasClicked) {
 				texture = clickTexture;
-				wasHovering = false;
 				wasClicked = true;
 			} else if(isHovering && wasClicked && (leftButtonState == ButtonState.Released)) {
 				wasClicked = false;
 				onClick(EventArgs.Empty);
-			} else {
+			} else if(!isHovering) {
 				texture = idleTexture;
 				wasHovering = false;
+				wasClicked = false;
 			}
 		}
 
