@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGame.Extended.Screens;
@@ -27,7 +26,7 @@ namespace Vectorier
 
         private void LoadMenuScreen()
         {
-            _screenManager.LoadScreen(new MenuScreen(this, _graphics), new FadeTransition(GraphicsDevice, Color.Black));
+            _screenManager.LoadScreen(new MenuScreen(this, _graphics, _screenManager), new FadeTransition(GraphicsDevice, Color.Black));
         }
 
         protected override void Initialize()

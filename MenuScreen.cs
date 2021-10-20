@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Screens;
@@ -8,35 +8,53 @@ namespace Vectorier
 {
     public class MenuScreen : GameScreen
     {
+        private Game game;
         private GraphicsDeviceManager _graphics;
+        private readonly ScreenManager screenManager;
         private SpriteBatch _spriteBatch;
+        private GameObjectManager gameObjectManager;
         Texture2D backgroundTexture;
+        Texture2D[] newButtonTextures;
 
-        public MenuScreen(Game1 game, GraphicsDeviceManager gameGraphics) : base(game) 
+        public MenuScreen(Game game, GraphicsDeviceManager gameGraphics, ScreenManager screenManager) : base(game) 
         {
+            this.game = game;
             _graphics = gameGraphics;
+            this.screenManager = screenManager;
         }
 
-		public override void LoadContent()
-		{
+        public override void LoadContent()
+        {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             backgroundTexture = Content.Load<Texture2D>("Images\\menu_background");
+            newButtonTextures = new Texture2D[3];
+            newButtonTextures[0] = Content.Load<Texture2D>("Images\\new_button");
+            newButtonTextures[1] = Content.Load<Texture2D>("Images\\new_button_hover");
+            newButtonTextures[2] = Content.Load<Texture2D>("Images\\new_button_click");
+
+
+            gameObjectManager = new GameObjectManager(game);
+            Button newButton = new Button(newButtonTextures[0], newButtonTextures[1], newButtonTextures[2], Vector2.Zero);
+            newButton.click += onNewButtonClicked;
+            gameObjectManager.addObject(newButton);
         }
+
+
 		public override void Draw(GameTime gameTime)
         {
             // Background Color
             GraphicsDevice.Clear(Color.LightSkyBlue);
 
             _spriteBatch.Begin();
-
             drawBackground();
-            
             _spriteBatch.End();
+
+            gameObjectManager.drawAll();
         }
 
         public override void Update(GameTime gameTime)
         {
-            // TODO: Add update logic here
+            gameObjectManager.updateAll(gameTime);
         }
 
         private void drawBackground()
@@ -67,6 +85,11 @@ namespace Vectorier
                 SpriteEffects.None, // Effects
                 0f // Layer
             );
+        }
+
+        private void onNewButtonClicked(object sender, EventArgs e)
+		{
+            screenManager.LoadScreen(new EditorScreen(game), new FadeTransition(GraphicsDevice, Color.Black));
         }
     }
 }

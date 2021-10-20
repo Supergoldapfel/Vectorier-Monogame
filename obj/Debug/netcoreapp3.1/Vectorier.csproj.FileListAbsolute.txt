@@ -50,3 +50,6 @@ C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debu
 C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.pdb
 C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\obj\Debug\netcoreapp3.1\Vectorier.genruntimeconfig.cache
 T:\VisualStudio\Projects\Vectorier\bin\Debug\netcoreapp3.1\Content\Images\menu_background.xnb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Content\Images\new_button.xnb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Content\Images\new_button_click.xnb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Content\Images\new_button_hover.xnb
