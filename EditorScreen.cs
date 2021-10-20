@@ -38,26 +38,10 @@ namespace Vectorier
 
 		public override void Draw(GameTime gameTime)
 		{
-			game.GraphicsDevice.Clear(Color.White);
-
-			RectangleF camBounds = cam.BoundingRectangle;
-			Vector2 closestGridPoint = new Vector2(camBounds.Left - (camBounds.Left % cellSize), camBounds.Top - (camBounds.Top % cellSize));
-			
 			var transformMatrix = cam.GetViewMatrix();
 			spriteBatch.Begin(transformMatrix: transformMatrix);
 
-			// Draw all vertical grid lines
-			for(int i=0; i*cellSize+closestGridPoint.X<=camBounds.Right; i++)
-			{
-				spriteBatch.DrawLine(new Vector2(i*cellSize+closestGridPoint.X, camBounds.Top), new Vector2(i*cellSize+closestGridPoint.X, camBounds.Bottom), Color.Black, 2);
-			}
-			// Draw all horizontal grid lines
-			for(int i=0; i*cellSize+closestGridPoint.Y<=camBounds.Bottom; i++)
-			{
-				spriteBatch.DrawLine(new Vector2(camBounds.Left, i*cellSize+closestGridPoint.Y), new Vector2(camBounds.Right, i*cellSize+closestGridPoint.Y), Color.Black, 2);
-			}
-			
-			spriteBatch.DrawPoint(0f, 0f, Color.Green, 4);
+			drawGrid();
 			
 			spriteBatch.End();
 		}
@@ -89,7 +73,27 @@ namespace Vectorier
 		{
 			const float movementSpeed = 200;
 			cam.Move(GetMovementDirection() * movementSpeed * gameTime.GetElapsedSeconds());
-			//
+		}
+
+		private void drawGrid()
+        {
+			game.GraphicsDevice.Clear(Color.White);
+
+			RectangleF camBounds = cam.BoundingRectangle;
+			Vector2 closestGridPoint = new Vector2(camBounds.Left - (camBounds.Left % cellSize), camBounds.Top - (camBounds.Top % cellSize));
+
+			// Draw all vertical grid lines
+			for (int i = 0; i * cellSize + closestGridPoint.X <= camBounds.Right; i++)
+			{
+				spriteBatch.DrawLine(new Vector2(i * cellSize + closestGridPoint.X, camBounds.Top), new Vector2(i * cellSize + closestGridPoint.X, camBounds.Bottom), Color.Black, 2);
+			}
+			// Draw all horizontal grid lines
+			for (int i = 0; i * cellSize + closestGridPoint.Y <= camBounds.Bottom; i++)
+			{
+				spriteBatch.DrawLine(new Vector2(camBounds.Left, i * cellSize + closestGridPoint.Y), new Vector2(camBounds.Right, i * cellSize + closestGridPoint.Y), Color.Black, 2);
+			}
+
+			spriteBatch.DrawPoint(0f, 0f, Color.Green, 4);
 		}
 	}
 }
