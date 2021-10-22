@@ -14,13 +14,13 @@ namespace Vectorier
 		private Texture2D clickTexture;
 		public event EventHandler click;
 
-		public Button(Texture2D texture, Texture2D hover, Texture2D click, Vector2 position, Vector2 origin, Vector2 scale, float rotation = 0f) : base(texture, position, origin, scale, rotation) 
+		public Button(Texture2D texture, Texture2D hover, Texture2D click, Vector2 position, Vector2 origin, Vector2 scale, Color? color = null, float rotation = 0f, float layer = 1f) : base(texture, position, origin, scale, color, rotation, layer) 
 		{
 			idleTexture = texture;
 			hoverTexture = hover;
 			clickTexture = click;
 		}
-		public Button(Texture2D texture, Texture2D hover, Texture2D click, Vector2 position, float rotation = 0f) : base(texture, position, rotation) 
+		public Button(Texture2D texture, Texture2D hover, Texture2D click, Vector2 position, Color? color = null, float rotation = 0f, float layer = 1f) : base(texture, position, color, rotation, layer) 
 		{
 			idleTexture = texture;
 			hoverTexture = hover;

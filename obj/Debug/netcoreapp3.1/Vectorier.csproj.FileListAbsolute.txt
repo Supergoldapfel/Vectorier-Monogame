@@ -56,3 +56,5 @@ C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debu
 T:\VisualStudio\Projects\Vectorier\bin\Debug\netcoreapp3.1\Content\Images\new_button.xnb
 T:\VisualStudio\Projects\Vectorier\bin\Debug\netcoreapp3.1\Content\Images\new_button_click.xnb
 T:\VisualStudio\Projects\Vectorier\bin\Debug\netcoreapp3.1\Content\Images\new_button_hover.xnb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Content\Images\slider.xnb
+C:\Users\warna\Documents\Visual Studio 2019\Projects\Vectorier-Monogame\bin\Debug\netcoreapp3.1\Content\Images\sliderKnob.xnb

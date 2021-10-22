@@ -8,12 +8,10 @@ namespace Vectorier
 	{
 		private List<GameObject> gameObjects = new List<GameObject>();
 		private Game game;
-		private SpriteBatch spriteBatch;
 
 		public GameObjectManager(Game game)
 		{
 			this.game = game;
-			spriteBatch = new SpriteBatch(game.GraphicsDevice);
 		}
 
 		public void addObject(GameObject newGameObject)
@@ -25,24 +23,22 @@ namespace Vectorier
 			gameObjects.AddRange(newGameObjects);
 		}
 
-		public void drawAll()
+		public void drawAll(SpriteBatch spriteBatch)
 		{
-			spriteBatch.Begin();
 			foreach(GameObject currentGameObject in gameObjects)
 			{
 				spriteBatch.Draw(
 					currentGameObject.texture, // Texture
-					currentGameObject.position, // Position
+					currentGameObject.getPosition(), // Position
 					null, // Rectangle
-					Color.White, // Color
+					currentGameObject.color, // Color
 					currentGameObject.rotation, // Rotation
 					currentGameObject.origin, // Origin
 					currentGameObject.scale, // Scale
 					SpriteEffects.None, // Effects
-					1f // Layer
+					currentGameObject.layer // Layer
 				);
 			}
-			spriteBatch.End();
 		}
 
 		public void updateAll(GameTime gameTime)

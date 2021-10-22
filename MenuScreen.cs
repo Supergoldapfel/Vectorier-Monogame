@@ -46,10 +46,11 @@ namespace Vectorier
             GraphicsDevice.Clear(Color.LightSkyBlue);
 
             _spriteBatch.Begin();
-            drawBackground();
-            _spriteBatch.End();
 
-            gameObjectManager.drawAll();
+            drawBackground();
+            gameObjectManager.drawAll(_spriteBatch);
+
+            _spriteBatch.End();
         }
 
         public override void Update(GameTime gameTime)

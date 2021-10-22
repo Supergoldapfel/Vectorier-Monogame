@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ivrFqBe1sZkuYz73W6Zyjlhi+teMa0pX6Y5MrCTlx6hIU+g4buNQr6hFbV3cWqx7kLFjjoZEfPOxoog9/yRcug==",
+  "dgSpecHash": "4WGMyUummPj2MAqg5ZSieB8rBTQnvGmoV5FqPBEQXeaJGaxldCoH0Y0CmY2Wpi2lS7U+vPMikkv10qpBERDNjQ==",
   "success": true,
-  "projectFilePath": "T:\\VisualStudio\\Projects\\Vectorier\\Vectorier.csproj",
+  "projectFilePath": "C:\\Users\\warna\\Documents\\Visual Studio 2019\\Projects\\Vectorier-Monogame\\Vectorier.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\warna\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\warna\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
